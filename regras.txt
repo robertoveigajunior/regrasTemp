@@ -1,0 +1,20 @@
+visualizar menu antigo:	nome			operador
+
+	#regra01 ------	modulo_migrado 		E
+			versao_antiga 		E
+			modulo_antigo_menu
+
+	#regra02 ------	modulo_nao_migrado 	E
+			versao_antiga 		E
+			modulo_antigo_menu
+
+
+	menu_antigo <-> [#regra01 ou #regra02]
+
+visualizar menu novo: 	nome			operador
+	
+	#regra03 ------ modulo_migrado		E
+			versao_nova		E
+			modulo_antigo_menu
+
+	menu_novo <-> [#regra03]
